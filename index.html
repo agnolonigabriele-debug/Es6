@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login o signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="row vh-100">
+        <div class="d-none d-sm-flex col-sm-6 p-3 flex-column justify-content-center sfondo text-white">
+            <h1>Hi guys</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat illum, est sunt eius fugit id ullam
+                minima sequi culpa provident quae fugiat iure sit excepturi sint error doloremque earum deserunt?</p>
+        </div>
+        <div class="col-sm-6 p-3 d-flex flex-column justify-content-center">
+            <h1 class="fw-bold mb-2">Login</h1>
+            <p class="text-secondary mb-4">Non hai un account? <a href="#" id="crea-account"
+                    class="link-primary text-decoration-none">Creane uno ora</a>, ci vorranno pochi istanti.</p>
+
+            <div id="alertLogin" class="alert d-none"></div>
+            <form id="formLogin">
+                <div class="mb-3">
+                    <label for="username-input" class="form-label">Username:</label>
+                    <input type="text" id="username-input" class="form-control" autocomplete="username" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password-input" class="form-label">Password:</label>
+                    <div class="input-group">
+                        <input type="password" id="passwordInput" class="form-control" equired>
+                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                            <i class="bi bi-eye" id="iconaPassword"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Accedi</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
