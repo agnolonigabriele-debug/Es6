@@ -43,10 +43,46 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
-        crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+
+    <!-- MODALI -->
+
+    <div class="modal fade" id="modale-account" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Registrazione</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formRegistrazione">
+                        <div class="mb-3">
+                            <label for="username-input-registrazione" class="form-label">Username:</label>
+                            <input type="text" id="username-input-registrazione" class="form-control"
+                                autocomplete="username" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="password-input" class="form-label">Password:</label>
+                            <div class="input-group">
+                                <input type="password" id="passwordInput-registrazione" class="form-control" equired>
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword-registrazione">
+                                    <i class="bi bi-eye" id="iconaPassword-registrazione"></i>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Accedi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+            crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
